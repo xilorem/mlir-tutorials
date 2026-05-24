@@ -58,12 +58,5 @@ $(STEP4): $(STEP3)
 		-reconcile-unrealized-casts \
 		-o $@
 
-show:
-	@echo "Generated files:"
-	@echo "  $(STEP1)  # Linalg on Buffers"
-	@echo "  $(STEP2)  # Loops"
-	@echo "  $(STEP3)  # Host/Device Code"
-	@echo "  $(STEP4)  # LLVM Dialect"
-
 clean:
 	rm -f $(STEP1) $(STEP2) $(STEP3) $(STEP4)
